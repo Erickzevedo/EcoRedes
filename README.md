@@ -1,0 +1,1 @@
+Este projeto consiste em um laboratório virtual interativo desenvolvido como Produto Mínimo Viável (MVP) para a segunda Verificação Acadêmica (VA2) da disciplina de Biologia Computacional (período 2026-1), ministrada pela Profª Jeane Melo na UFRPE.
