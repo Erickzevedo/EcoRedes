@@ -1,6 +1,6 @@
-/* ==========================================================================
-   RESET E CONFIGURAÇÕES GERAIS (ECOLÓGICO)
-   ========================================================================== */
+/* ===============================
+   RESET E CONFIGURAÇÕES GERAIS
+   =============================== */
 * {
     margin: 0;
     padding: 0;
@@ -9,22 +9,22 @@
 }
 
 body {
-    background-color: #f4f7f4; /* Tom sutil esverdeado de fundo */
-    color: #2c3e2e; /* Texto escuro levemente florestal */
+    background-color: #f4f7f4; 
+    color: #2c3e2e;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
-/* ==========================================================================
+/* ===========================
    CABEÇALHO E RODAPÉ
-   ========================================================================== */
+   =========================== */
 header {
-    background-color: #1e3f20; /* Verde Floresta Fechado */
+    background-color: #1e3f20; 
     color: #ffffff;
     padding: 20px;
     text-align: center;
-    border-bottom: 4px solid #27ae60; /* Linha viva de destaque verde */
+    border-bottom: 4px solid #27ae60; 
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
@@ -50,9 +50,9 @@ footer {
     border-top: 2px solid #27ae60;
 }
 
-/* ==========================================================================
-   LAYOUT PRINCIPAL (GRID RECALIBRADO)
-   ========================================================================== */
+/* ==========================
+   LAYOUT PRINCIPAL
+   ========================== */
 .container {
     display: grid;
     grid-template-columns: 2.5fr 1fr;
@@ -70,9 +70,9 @@ footer {
     }
 }
 
-/* ==========================================================================
+/* ==========================
    ÁREA DO JOGO (CANVAS)
-   ========================================================================== */
+   ========================== */
 .canvas-area {
     display: flex;
     flex-direction: column;
@@ -81,7 +81,7 @@ footer {
 
 #espacoJogo {
     background-color: #ffffff;
-    border: 2px solid #cfe2cf; /* Borda suave verde-oliva */
+    border: 2px solid #cfe2cf;
     border-radius: 12px;
     box-shadow: 0 6px 12px rgba(30, 63, 32, 0.06);
     width: 100%;
@@ -90,9 +90,9 @@ footer {
 }
 
 
-/* ==========================================================================
+/* ==========================
    PAINEL LATERAL (SIDEBAR) E CARDS
-   ========================================================================== */
+   ========================== */
 .sidebar {
     display: flex;
     flex-direction: column;
@@ -133,15 +133,15 @@ footer {
     color: #1e3f20;
 }
 
-/* ==========================================================================
+/* ==========================
    ELEMENTOS INTERATIVOS E COMPONENTES
-   ========================================================================== */
+   ========================== */
 .botoes-acao {
     margin-top: 15px;
 }
 
 #btnReiniciar {
-    background-color: #27ae60; /* Botão Verde Natureza */
+    background-color: #27ae60;
     color: white;
     border: none;
     padding: 12px 15px;
@@ -155,7 +155,7 @@ footer {
 }
 
 #btnReiniciar:hover {
-    background-color: #219653; /* Verde um pouco mais escuro no hover */
+    background-color: #219653;
     box-shadow: 0 4px 8px rgba(39, 174, 96, 0.3);
     transform: translateY(-1px);
 }
@@ -168,6 +168,5 @@ footer {
     text-align: center;
 }
 
-.predação { color: #e74c3c; } /* Mantido vermelho para representar predação/alimento */
-.mutualismo { color: #27ae60; } /* Verde para cooperação */
-.competicao { color: #f39c12; } /* Laranja para disputa */
+.predação { color: #e74c3c; } 
+.mutualismo { color: #27ae60; } 

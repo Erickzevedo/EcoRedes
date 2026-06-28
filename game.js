@@ -1,6 +1,6 @@
-/* ==========================================================================
-   1. ESTRUTURA DE DADOS REORGANIZADA (ALINHAMENTO GEOMÉTRICO PERFEITO)
-   ========================================================================== */
+/* ==========================
+   1. ESTRUTURA DE DADOS
+   ========================== */
 const canvas = document.getElementById("espacoJogo");
 const ctx = canvas.getContext("2d");
 
@@ -24,9 +24,9 @@ const arestas = [
     { de: "v6", para: "v5", tipo: "mutualismo" }
 ];
 
-/* ==========================================================================
-   2. MOTOR DO JOGO E MODELAGEM DE REGRAS ECOLÓGICAS REAIS
-   ========================================================================== */
+/* ==========================
+   2. MOTOR DO JOGO
+   ========================== */
 function atualizarCiclo() {
     let proximoEstado = JSON.parse(JSON.stringify(especies));
 
@@ -44,7 +44,7 @@ function atualizarCiclo() {
     if (especies.v2.ativo && especies.v2.populacao > 0) {
         let ganhoAlimento = especies.v1.populacao > 10 ? 4 : -15; // Passa fome se Capim estiver escasso
         let perdaPredacao = (especies.v3.ativo && especies.v3.populacao > 0) ? (especies.v3.populacao * 0.08) : -4; // Sem predador, ele cresce livremente
-        
+
         proximoEstado.v2.populacao = Math.max(0, Math.min(100, especies.v2.populacao + ganhoAlimento - perdaPredacao));
     }
 
@@ -96,9 +96,9 @@ function atualizarCiclo() {
     renderizarGrafo();
 }
 
-/* ==========================================================================
-   3. RENDERIZAÇÃO GRÁFICA SEM ACÚMULO DE TRANSLATION (ISOLADO)
-   ========================================================================== */
+/* ==========================
+   3. RENDERIZAÇÃO GRÁFICA
+   ========================== */
 function desenharSetaEstilizada(origem, destino, tipo) {
     const x1 = origem.x;
     const y1 = origem.y;
@@ -212,9 +212,9 @@ function renderizarGrafo() {
     }
 }
 
-/* ==========================================================================
-   4. INTERAÇÃO POR CLIQUE RETANGULAR
-   ========================================================================== */
+/* ==========================
+   4. INTERAÇÃO
+   ========================== */
 canvas.addEventListener("click", function(event) {
     const rect = canvas.getBoundingClientRect();
     const clickX = event.clientX - rect.left;
