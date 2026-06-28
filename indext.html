@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoRedes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Simulador de Relações Ecológicas</h1>
+    </header>
+    
+    <main class="container">
+        <section class="canvas-area">
+            <canvas id="espacoJogo" width="800" height="500"></canvas>
+        </section>
+
+        <aside class="sidebar">
+            <div class="card painel-controle">
+                <h2>Painel do Ecossistema</h2>
+                <p>O motor lógico atualiza as dinâmicas populacionais a cada ciclo geracional de 2 segundos.</p>
+                <div class="botoes-acao">
+                    <button id="btnReiniciar" onclick="location.reload()">Reiniciar Ecossistema</button>
+                </div>
+            </div>
+
+            <div class="card legenda">
+                <h3>Legenda de Interações</h3>
+                <ul>
+                    <li><span class="seta predação">➔</span> <strong>Predação:</strong> Seta aponta da Presa para o Predador (Fluxo Trófico).</li>
+                    <li><span class="seta mutualismo">↔</span> <strong>Mutualismo:</strong> Linha bidirecional de benefício mútuo.</li>
+                </ul>
+            </div>
+            
+           
+        </aside>
+    </main>
+    <script src="game.js"></script>
+</body>
+</html>
